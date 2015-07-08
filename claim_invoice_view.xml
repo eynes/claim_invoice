@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+	
+	<record id="view_partner_inherit_phonecall_form1" model="ir.ui.view">
+		<field name="name">res.partner.phonecall.form.inherit1</field>
+		<field name="model">res.partner</field>
+		<field name="inherit_id" ref="account.view_partner_property_form"/>
+		<field name="arch" type="xml">
+			<page string="Accounting" position="after" version="7.0">
+				<page string="Phonecall">
+					<field name="phonecall_invoice_ids">
+						<tree editable="top">
+							<field name="date"/>
+							<field name="invoice_id"/>
+							<field name="description"/>
+							<field name="name"/>
+							<field name="partner_phone"/>
+							<field name="user_id"/>
+							<button string="Schedule Other Call"
+								icon="terp-call-start"
+								name="%(crm.phonecall_to_phonecall_act)d"
+								type="action"/>
+						</tree>
+					</field>
+				</page>
+			</page>
+		</field>
+	</record>
+	
+	<record id="invoice_form_inherit1" model="ir.ui.view">
+		<field name="name">account.invoice.form.inherit1</field>
+		<field name="model">account.invoice</field>
+		<field name="inherit_id" ref="account.invoice_form"/>
+		<field name="arch" type="xml">
+			<page string="Payments" position="after" version="7.0">
+				<page string="Phonecall">
+					<field name="phonecall_invoice_ids">
+						<tree editable="top">
+							<field name="date"/>
+							<field name="partner_id"/>
+							<field name="description"/>
+							<field name="name"/>
+							<field name="partner_phone"/>
+							<field name="user_id"/>
+							<button string="Schedule Other Call"
+								icon="terp-call-start"
+								name="%(crm.phonecall_to_phonecall_act)d"
+								type="action"/>
+						</tree>
+					</field>
+				</page>
+			</page>
+		</field>
+	</record>
+
+</data>
+</openerp>

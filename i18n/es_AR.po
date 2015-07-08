@@ -1,0 +1,164 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* claim_invoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0-20140804-231303\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-07 03:22+0000\n"
+"PO-Revision-Date: 2015-07-07 00:31-0300\n"
+"Last-Translator: kloss <kloss>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: claim_invoice
+#: view:account.invoice.claim:0
+#: model:ir.actions.act_window,name:claim_invoice.action_account_invoice_claim
+msgid "Claim Over Invoices"
+msgstr "Reclamos en facturas"
+
+#. module: claim_invoice
+#: field:account.invoice,phonecall_invoice_ids:0
+msgid "Phonecall Invoice"
+msgstr "Llamadas teléfonicas"
+
+#. module: claim_invoice
+#: field:account.invoice.claim,user_id:0
+#: field:invoice_claim.stat,user_id:0
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: claim_invoice
+#: view:account.invoice:0
+#: model:ir.model,name:claim_invoice.model_crm_phonecall
+#: view:res.partner:0
+msgid "Phonecall"
+msgstr "Llamadas telefónicas"
+
+#. module: claim_invoice
+#: view:invoice_claim.stat:0
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: claim_invoice
+#: view:account.invoice.claim:0
+msgid "Claim Invoices"
+msgstr "Reclamos en facturas"
+
+#. module: claim_invoice
+#: field:account.invoice.claim,description:0
+#: field:invoice_claim.stat,description:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: claim_invoice
+#: view:account.invoice.claim:0
+msgid "Call description"
+msgstr "Descripción de la llamada"
+
+#. module: claim_invoice
+#: field:account.invoice.claim,partner_phone:0
+#: field:invoice_claim.stat,partner_phone:0
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: claim_invoice
+#: model:ir.model,name:claim_invoice.model_invoice_claim_stat
+msgid "Invoice claim Statistics"
+msgstr "Estadísticas de llamadas en reclamos"
+
+#. module: claim_invoice
+#: view:invoice_claim.stat:0
+msgid "User"
+msgstr "Usuario"
+
+#. module: claim_invoice
+#: field:account.invoice.claim,date:0
+#: field:invoice_claim.stat,date:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: claim_invoice
+#: field:crm.phonecall,invoice_id:0
+#: field:invoice_claim.stat,invoice_id:0
+#: model:ir.model,name:claim_invoice.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: claim_invoice
+#: view:invoice_claim.stat:0
+#: model:ir.actions.act_window,name:claim_invoice.action_invoice_claim_stat
+#: model:ir.ui.menu,name:claim_invoice.menu_action_invoice_claim_stat
+msgid "Invoice Claim Phonecall"
+msgstr "Reclamo telefónico de facturas"
+
+#. module: claim_invoice
+#: field:account.invoice.claim,partner_id:0
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: claim_invoice
+#: view:account.invoice:0
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: claim_invoice
+#: view:res.partner:0
+msgid "Accounting"
+msgstr "Contabilidad"
+
+#. module: claim_invoice
+#: field:invoice_claim.stat,period_id:0
+msgid "Period"
+msgstr "Periodo"
+
+#. module: claim_invoice
+#: view:invoice_claim.stat:0
+msgid "Month"
+msgstr "Mes"
+
+#. module: claim_invoice
+#: field:account.invoice.claim,name:0
+#: field:invoice_claim.stat,name:0
+msgid "Call Summary"
+msgstr "Resumen de la llamada"
+
+#. module: claim_invoice
+#: view:account.invoice.claim:0
+msgid ""
+"Once invoices are selected, you will be able\n"
+"                        to create phonecall claim over them."
+msgstr "Seleccione las factura deseadas y podrá crear un registro de llamada teléfonica en cada una de ellas."
+
+#. module: claim_invoice
+#: view:account.invoice.claim:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: claim_invoice
+#: view:invoice_claim.stat:0
+#: field:invoice_claim.stat,partner_id:0
+#: model:ir.model,name:claim_invoice.model_res_partner
+msgid "Partner"
+msgstr "Cliente"
+
+#. module: claim_invoice
+#: view:account.invoice:0
+#: view:res.partner:0
+msgid "Schedule Other Call"
+msgstr "Planificar otra llamada"
+
+#. module: claim_invoice
+#: view:account.invoice.claim:0
+msgid "or"
+msgstr "or"
+
+#. module: claim_invoice
+#: model:ir.model,name:claim_invoice.model_account_invoice_claim
+msgid "Claim the selected invoices"
+msgstr "Reclamar sobre las facturas seleccionadas"
+
