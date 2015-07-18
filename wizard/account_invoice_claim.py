@@ -23,6 +23,7 @@ from openerp.osv import fields, osv
 from openerp.tools.translate import _
 from openerp import netsvc
 from openerp import pooler
+import time
 
 class account_invoice_claim(osv.osv_memory):
     """
@@ -40,6 +41,12 @@ class account_invoice_claim(osv.osv_memory):
         'date': fields.datetime('Date', required=True),
         'partner_phone': fields.char('Phone', size=32),
     }
+    
+    _defaults = {
+        'user_id': lambda self,cr,uid,c: self.pool.get('res.users').browse(cr, uid, uid, c).id,
+        'date': lambda *a: time.strftime('%Y-%m-%d'),
+    }
+    
     def invoice_claim(self, cr, uid, ids, context=None):
         invoice_obj = self.pool.get('account.invoice')
         phonecall_obj = self.pool.get('crm.phonecall')
